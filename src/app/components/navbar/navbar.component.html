@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li><h2 [routerLink]="['/home']">Home</h2></li>
+    <li><h2 [routerLink]="['/products']">Products</h2></li>
+    <li><h2 [routerLink]="['/cart']">Cart</h2></li>
+    <li>
+      <button (click)="this.authService.signin()">Đăng nhâp với Gg</button>
+      <button (click)="this.storeService.deleteAllFromCart();this.authService.signout()">Đăng xuất</button>
+    </li>
+    @if (authService.currentUser) {
+      <img [src]="authService.currentUser.photoURL">
+    }
+  </ul>
+
+</nav>

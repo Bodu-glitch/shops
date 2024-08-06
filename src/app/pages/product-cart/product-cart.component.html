@@ -1,0 +1,4 @@
+<h1>Đây là giỏ hàng</h1>
+@for (product of this.storeService.cart; track $index) {
+  <app-cart [product]="product"></app-cart>
+}
