@@ -1,2 +1,6 @@
 <h1>Detail Product</h1>
-<app-detail [product]="this.detailProduct"></app-detail>
+@if (!detailProduct){
+  <h1>Product not found</h1>
+} @else {
+  <app-detail [product]="this.detailProduct"></app-detail>
+}

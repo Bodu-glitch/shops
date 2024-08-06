@@ -6,8 +6,7 @@ div {
 
 
 nav {
-  background-color: #333;
-  overflow: hidden;
+  background-color: #007bff;
 
 
   ul {
@@ -15,7 +14,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   li {
@@ -33,4 +32,53 @@ nav {
   li a:hover {
     background-color: #111;
   }
+}
+
+li {
+  display: flex;
+  align-items: center;
+
+  button {
+    height: 50%;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #dc3545;
+    }
+  }
+}
+
+nav ul li h2:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+img{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 12px;
+  margin: 0;
+}
+#userBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #007bff;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.3s;
+
 }

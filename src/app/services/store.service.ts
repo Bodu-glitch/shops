@@ -55,10 +55,10 @@ export class StoreService {
   cart: ProductModel[] = [];
 
   addtocart(item: any) {
-    // if (this.authService.currentUser == null) {
-    //   alert('Bạn cần đăng nhập để thêm vào giỏ hàng');
-    //   return;
-    // }
+    if (this.authService.currentUser == null) {
+      alert('Bạn cần đăng nhập để thêm vào giỏ hàng');
+      return;
+    }
     console.log(item);
     console.log(item.id);
     console.log(this.cart);
